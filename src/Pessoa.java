@@ -1,4 +1,4 @@
-public class Pessoa {
+public class Pessoa implements Comparable<Pessoa>{
     /**
      * Nome de uma pessoa
      */
@@ -21,7 +21,7 @@ public class Pessoa {
      * @param nome   Nome de uma pessoa
      * @param idade  Idade de uma pessoa
      * @param altura Altura de uma pessoa
-     */
+     *//
     public Pessoa(String nome, int idade, double altura) {
         this.nome = nome;
         this.idade = idade;
@@ -57,5 +57,11 @@ public class Pessoa {
             " nome='" + this.nome + "'," +
             " idade='" + this.idade + "'," +
             " altura='" + this.altura + "'}";
+    }
+
+    @Override
+    public int compareTo(Pessoa pessoa) {
+        return Integer.compare(this.getIdade(), pessoa.getIdade());
+
     }
 }
