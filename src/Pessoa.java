@@ -21,7 +21,7 @@ public class Pessoa implements Comparable<Pessoa>{
      * @param nome   Nome de uma pessoa
      * @param idade  Idade de uma pessoa
      * @param altura Altura de uma pessoa
-     *//
+     */
     public Pessoa(String nome, int idade, double altura) {
         this.nome = nome;
         this.idade = idade;
