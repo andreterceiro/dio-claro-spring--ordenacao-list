@@ -12,7 +12,8 @@ public class Pessoa {
     /**
      * Altura de uma pessoa
      */
-    private Double altura;
+    private double altura;
+
 
     /**
      * Construtor
@@ -21,7 +22,7 @@ public class Pessoa {
      * @param idade  Idade de uma pessoa
      * @param altura Altura de uma pessoa
      */
-    public void Pessoa(String nome, int idade, double altura) {
+    public Pessoa(String nome, int idade, double altura) {
         this.nome = nome;
         this.idade = idade;
         this.altura = altura;
